@@ -1,0 +1,10 @@
+"""
+notes
+"""
+
+Suppose you have a Fruit class written in fruit.py
+If you want to use in example.py, then you can use following in example.py 
+
+from fruit import Fruit
+
+Now, yiou can use Fruit class and its everything as if it is written in same class
