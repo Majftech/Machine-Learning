@@ -25,7 +25,9 @@ print('Duration: {} seconds'.format(time.time() - start))
 better method - Use vector methods
 """
 start = time.time()
-recent_coding_books =  # TODO: compute intersection of lists
+recent_coding_books =  recent_coding_books = np.intersect1d(recent_books, coding_books)
+# or, even this is correct
+#recent_coding_books = set(recent_books).intersection(coding_books)
 print(len(recent_coding_books))
 print('Duration: {} seconds'.format(time.time() - start))
     
