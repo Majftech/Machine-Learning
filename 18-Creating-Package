@@ -1,0 +1,47 @@
+"""
+This is notes
+"""
+
+Installing a package: 
+Eg.
+pip install scikit-learn
+If you do this, pip will bring said package from online repository Pypi
+
+What is pip?
+Pip is a Python package manager that helps with installing and uninstalling Python packages. You might have used pip to install packages using the 
+command line: pip install numpy. When you execute a command like pip install numpy, 
+pip will download the package from a Python package repository called PyPi.
+
+Making a Package
+In the previous section, the Distribution and Gaussian code was refactored into individual modules. A Python module is just a Python file containing code.
+
+In this next section, you'll convert the Distributions code into a Python package. A package is a collection of Python modules. 
+Although the previous code might already seem like it was a Python package because it contained multiple files, a Python package also needs 
+an __init__.py file. 
+In this section, you'll learn how to create this __init__.py file and then pip install the package into your local Python installation.
+
+
+Make a directory: Eg. python_package_example
+In this create:
+    1. distributions folder. It has 3 files.
+            1. GeneralDistribution.py file having Distribution class
+            2. GaussianDistribution.py having Gaussian class
+                    Also, since it uses above class so it should have one line:
+                    from .GeneralDistribution import Distribution.  (Dot . is required in Python 3, but not in python 2)
+            3. __init__.py.  
+                    This is run as soon as you import a package
+                    This can be empty.
+                    It can have some code to ease during usage of the package
+                        eg. from .GaussianDistribution import Gaussian
+                        If we do not add this line, then program that use it il have to write:
+                              from distribution.GaussianDistribution import Gaussian
+    2. setup.py
+    
+    
+ __init__.py file in a directory tells python that it is a distribution.
+ 
+ 
+
+
+
+
