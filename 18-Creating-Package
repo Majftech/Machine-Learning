@@ -29,16 +29,36 @@ In this create:
                     Also, since it uses above class so it should have one line:
                     from .GeneralDistribution import Distribution.  (Dot . is required in Python 3, but not in python 2)
             3. __init__.py.  
+                    This file in a directory tells python that it is a distribution.
                     This is run as soon as you import a package
                     This can be empty.
                     It can have some code to ease during usage of the package
                         eg. from .GaussianDistribution import Gaussian
                         If we do not add this line, then program that use it il have to write:
-                              from distribution.GaussianDistribution import Gaussian
+                              from distributions.GaussianDistribution import Gaussian
     2. setup.py
+                This is necessary for pip installing. It has information or metadata of package
     
     
- __init__.py file in a directory tells python that it is a distribution.
+  To install this package:
+      cd to folder having distributions folderr and setup.py file
+      > pip install .
+                This will install the package
+  
+  
+  Use this package:
+        You can test this on python interpreter itself. You can be at any folder, since it is already installed.
+        >>> from distributions import Gaussian
+        >>> gaussian_one = Gaussian(22,2)
+        >>> print(gaussian_one.mean)
+        >>> 22
+        
+ To know path where it gets installed:
+        >>> import distributions
+        >>> distributions.__file__
+        >>> 'opt/conda/lib/python-3.6/site-packages-distributions/__init__.py'
+  
+
  
  
 
