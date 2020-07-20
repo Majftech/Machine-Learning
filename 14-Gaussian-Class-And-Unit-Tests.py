@@ -1,3 +1,14 @@
+"""
+This class has many Utility Functions.
+At the end it also has Unit tests.
+Also, it uses a number,txt filke that has just a few numbers on each new line eg:
+1
+4
+67
+98
+25
+""""""""""""""""""
+
 import math
 import matplotlib.pyplot as plt
 
