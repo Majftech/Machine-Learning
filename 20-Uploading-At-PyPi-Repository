@@ -75,3 +75,66 @@ You can now donload this in your projects:
       When you pip install a package, pip will first look for a whl file (wheel file) and if there isn't one, will then look for the tar.gz file.
    
    
+############################ SAMPLE FILES. #########################################
+
+Sample license.txt file:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+MIT license
+The MIT License (MIT)
+
+Copyright (c) 20019-2020 Mohd Anwar Jamal Faiz and Majftech
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+IT IS IMPORTANT THAT THIS COPYRIGHT NOTICE AND AUTHOR INFORMATION IS NOT REMOVED.
+
+
+
+
+Sample README.md file:
+~~~~~~~~~~~~~~~~~~~~~~~
+Copyright: Majf Technologies (www.majftech.com)
+Author: Mohd Anwar Jamal Faiz
+Email: Toughjamy@yahoo.com
+
+
+Gaussian and Binomial distributions Utility Package from Majf Technologies.
+
+
+
+
+
+Sample setup.cfg file:
+~~~~~~~~~~~~~~~~~~~~~~~
+[metadata]
+      version = 1.0
+      author = Mohd Anwar Jamal Faiz (www.majftech.com / www.w3lc.com)
+      author-email = toughjamy@yahoo.com
+      home-page = https://github.com/Anwar-Faiz
+      description-file = README.md
+      license = MIT
+      platform = any
+      keywords = gaussian, distribution, binomaial, statistics, scikit, python, package, mathematics, majftech, india, aligarh university, owasp, ieee, anwar jamal faiz, ghazipur, lucknow
+      
+[options]
+zip_safe = false
+
+
+
