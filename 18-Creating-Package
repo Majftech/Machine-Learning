@@ -44,6 +44,9 @@ In this create:
       cd to folder having distributions folderr and setup.py file
       > pip install .
                 This will install the package
+                
+      > pip install --upgrade .   
+            (If it already installed and you updated code, so you need to upgrade)
   
   
   Use this package:
