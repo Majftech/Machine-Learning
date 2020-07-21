@@ -3,7 +3,8 @@ This is notes
 """
 
 PyPi vs. Test PyPi
-Note that pypi.org and test.pypy.org are two different websites. You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.
+Note that pypi.org and test.pypy.org are two different websites.
+You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.
 
 Also, remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
 
@@ -23,18 +24,36 @@ Structure of your folder:
             description-file = README.md
 
 
-Summary of the Terminal Commands Used in the Video
-cd binomial_package_files
-python setup.py sdist
-pip install twine
+Summary of the Terminal Commands Used:
+      cd <folder having above files and folders>
+      > python setup.py sdist
+             This will make some new files in directory like:
+                  dist folder -> Will have tar.gz file. This is the file that needs to be uploaded.
+                  distributions.egg.info file.
+      > pip install twine
+      > twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
-# commands to upload to the pypi test repository
-twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-pip install --index-url https://test.pypi.org/simple/ dsnd-probability
-
+You can now donload this in your projects:
+      > pip install --index-url https://test.pypi.org/simple/ dsnd-probability
+      
+      Now you can test this package and when you find everythi g is Ok. And, you are ready to upload on regular PyPi site, do it as follows.
+   
+   
 # command to upload to the pypi repository
-twine upload dist/*
-pip install dsnd-probability
+      > twine upload dist/*
+      
+      Uninstall earlier version to test new one from regular PyPi site:
+            > pip uninstall distributions
+      
+      Install from regular Pypi repo:
+            This is just like you install any regular package eg:
+            > pip install distributions
+ 
+ 
+ ** Note: Instead of distributions, you need to use a different name for this if you want to upload on PyPi.
+ ** Note: If you need to change name again, then you need to delete dist folder and egg.info file. And, then update your project and. reate these files again.
+ 
+      
 More PyPi Resources
 Tutorial on distributing packages
 This link has a good tutorial on distributing Python packages including more configuration options for your setup.py file: tutorial on distributing packages. You'll notice that the python command to run the setup.py is slightly different with
@@ -46,8 +65,4 @@ A tar.gz file, ie an sdist, contains the files needed to compile and install a P
 
 Other than this command, the rest of the steps for uploading to PyPi are the same.
 
-Other Links
-If you'd like to learn more about PyPi, here are a couple of resources:
 
-Overview of PyPi
-MIT License
